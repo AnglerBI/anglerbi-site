@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angler Business Intelligence</title>
+    <meta name="description" content="Angler Business Intelligence offers expert BI consulting services to unlock your data's potential.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="antialiased">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-opacity-80 backdrop-blur-md shadow-xl" style="background-color: #0A101F;">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="flex items-center text-2xl font-bold text-white hover:text-sky-400 transition-colors duration-300">
+                <img src="assets/Angler_Test.png" alt="Angler BI Logo" class="h-8 md:h-8 mr-4" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/40x40/0A101F/00B2EE?text=A&font=Inter&w=40&h=40';"> 
+                <span>AnglerBI</span>
+            </a>
+
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="#services" class="nav-link text-gray-300 hover:text-sky-400 transition duration-300">Services</a>
+                <a href="#about" class="nav-link text-gray-300 hover:text-sky-400 transition duration-300">About Us</a>
+                <a href="#contact" class="nav-link text-gray-300 hover:text-sky-400 transition duration-300">Contact</a>
+            </nav>
+
+            <div class="md:hidden">
+                <button id="mobileMenuButton" class="hamburger focus:outline-none">
+                    <div class="line1 w-6 h-0.5 bg-gray-300 mb-1.5"></div>
+                    <div class="line2 w-6 h-0.5 bg-gray-300 mb-1.5"></div>
+                    <div class="line3 w-6 h-0.5 bg-gray-300"></div>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-gray-800 absolute top-full left-0 right-0 shadow-lg pb-4">
+            <a href="#services" class="nav-link-mobile block px-6 py-3 text-gray-300 hover:bg-sky-500 hover:text-gray-900 transition duration-300">Services</a>
+            <a href="#about" class="nav-link-mobile block px-6 py-3 text-gray-300 hover:bg-sky-500 hover:text-gray-900 transition duration-300">About Us</a>
+            <a href="#contact" class="nav-link-mobile block px-6 py-3 text-gray-300 hover:bg-sky-500 hover:text-gray-900 transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <section id="hero" class="min-h-screen flex items-center justify-center pt-24 md:pt-20 bg-gradient-to-br from-gray-900 via-slate-900 to-blue-900 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            </div>
+        <div class="container mx-auto px-6 text-center md:text-left flex flex-col md:flex-row items-center z-10">
+            <div class="md:w-3/5 lg:w-1/2 mb-10 md:mb-0 md:pr-10">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                    <span class="text-white">Unlock Your Data's</span> <span class="accent-color">Potential.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8">
+                    Angler BI illuminates your business path with expert data strategy, visualization, and predictive analytics. Let's transform your data into decisions.
+                </p>
+                <a href="#contact" class="btn bg-accent-color text-white font-semibold py-3 px-8 rounded-lg text-lg shadow-lg">
+                    Get a Free Consultation
+                </a>
+            </div>
+            <div class="md:w-2/5 lg:w-1/2 flex justify-center md:justify-end hero-image-container">
+                <img src="https://images.pexels.com/photos/6150379/pexels-photo-6150379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Angler BI Team / Founder" class="rounded-lg shadow-2xl w-full max-w-md md:max-w-none">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-gray-800/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Expertise</h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                    We partner with you to design and implement robust business intelligence solutions that drive growth and efficiency.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-gray-800 p-8 rounded-xl shadow-xl transition-shadow duration-300 cursor-pointer" data-service-id="strategy">
+                    <div class="text-3xl accent-color mb-4"><i class="fas fa-road"></i></div> <h3 class="text-2xl font-semibold mb-3">Data Strategy & Roadmap</h3>
+                    <p class="text-gray-400 mb-4">Crafting clear, actionable strategies to align your data initiatives with core business objectives.</p>
+                    <div class="details-prompt text-sm accent-color font-medium">Click for Case Study <i class="fas fa-arrow-right ml-1"></i></div>
+                </div>
+
+                <div class="service-card bg-gray-800 p-8 rounded-xl shadow-xl transition-shadow duration-300 cursor-pointer" data-service-id="visualization">
+                    <div class="text-3xl accent-color mb-4"><i class="fas fa-chart-bar"></i></div> <h3 class="text-2xl font-semibold mb-3">Data Visualization & Dashboards</h3>
+                    <p class="text-gray-400 mb-4">Transforming complex data into intuitive, interactive dashboards for insightful decision-making.</p>
+                    <div class="details-prompt text-sm accent-color font-medium">Click for Case Study <i class="fas fa-arrow-right ml-1"></i></div>
+                </div>
+
+                <div class="service-card bg-gray-800 p-8 rounded-xl shadow-xl transition-shadow duration-300 cursor-pointer" data-service-id="analytics">
+                    <div class="text-3xl accent-color mb-4"><i class="fas fa-cogs"></i></div> <h3 class="text-2xl font-semibold mb-3">Predictive Analytics</h3>
+                    <p class="text-gray-400 mb-4">Leveraging advanced analytics to forecast trends, identify opportunities, and mitigate risks.</p>
+                    <div class="details-prompt text-sm accent-color font-medium">Click for Case Study <i class="fas fa-arrow-right ml-1"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="caseStudyModal" class="fixed inset-0 bg-gray-900 bg-opacity-95 p-4 sm:p-8 flex items-center justify-center closed z-[60]">
+        <div class="bg-gray-800 w-full max-w-3xl max-h-[90vh] rounded-xl shadow-2xl relative overflow-hidden flex flex-col">
+            <button id="closeModalButton" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl z-10">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content p-6 sm:p-8 overflow-y-auto flex-grow">
+                <h2 id="modalTitle" class="text-3xl font-bold mb-2 accent-color"></h2>
+                <p class="text-sm text-gray-500 mb-6" id="modalClient"></p>
+                
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold mb-2 text-white">The Challenge</h4>
+                    <p id="modalChallenge" class="text-gray-300"></p>
+                </div>
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold mb-2 text-white">Our Solution</h4>
+                    <p id="modalSolution" class="text-gray-300"></p>
+                </div>
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold mb-2 text-white">Results & Impact</h4>
+                    <p id="modalResults" class="text-gray-300"></p>
+                </div>
+                <div class="mt-6" id="modalVisuals">
+                    <img src="https://placehold.co/600x300/2D3748/A0AEC0?text=Case+Study+Visual&font=Inter" alt="Case Study Visual" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+            </div>
+             <div class="p-6 border-t border-gray-700 text-right">
+                <button id="modalBackButton" class="btn bg-accent-color text-white font-semibold py-2 px-6 rounded-lg">
+                    Back to Services
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="about" class="py-20" style="background-color: #0A101F;">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+                     <img src="https://placehold.co/500x350/1A202C/4A5568?text=Angler+BI+Team&font=Inter" alt="About Angler BI" class="rounded-xl shadow-2xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">About Angler BI</h2>
+                    <p class="text-lg text-gray-300 mb-4">
+                        Angler Business Intelligence is dedicated to empowering businesses with the clarity and insight needed to navigate complex market landscapes. Our mission is to transform raw data into strategic assets.
+                    </p>
+                    <p class="text-gray-400 mb-4">
+                        <strong class="text-white">Our Vision:</strong> To be the leading partner for businesses seeking to unlock data-driven growth and innovation.
+                    </p>
+                    <p class="text-gray-400 mb-6">
+                        <strong class="text-white">Core Values:</strong> Integrity, Innovation, Collaboration, and Client Success. We believe in building transparent, long-term partnerships.
+                    </p>
+                    <p class="text-gray-400">
+                        <strong class="text-white">Our Difference:</strong> We combine deep technical expertise with a strong understanding of business strategy, ensuring our solutions are not just technologically sound but also practically impactful.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-20 bg-gray-800/50 border-t border-gray-700/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Discuss Your Needs</h2>
+                <p class="text-lg text-gray-400 max-w-xl mx-auto">
+                    Ready to harness the power of your data? Reach out for a complimentary consultation.
+                </p>
+            </div>
+
+            <div class="max-w-lg mx-auto bg-gray-800 p-8 rounded-xl shadow-2xl">
+                <form id="contactForm">
+                    <div class="mb-5">
+                        <label for="name" class="block mb-2 text-sm font-medium text-gray-300">Full Name</label>
+                        <input type="text" id="name" name="name" class="bg-gray-700 border border-gray-600 text-gray-200 text-sm rounded-lg focus:ring-sky-500 focus:border-sky-500 block w-full p-2.5" placeholder="John Doe" required>
+                    </div>
+                    <div class="mb-5">
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-300">Email Address</label>
+                        <input type="email" id="email" name="email" class="bg-gray-700 border border-gray-600 text-gray-200 text-sm rounded-lg focus:ring-sky-500 focus:border-sky-500 block w-full p-2.5" placeholder="you@company.com" required>
+                    </div>
+                    <div class="mb-5">
+                        <label for="company" class="block mb-2 text-sm font-medium text-gray-300">Company (Optional)</label>
+                        <input type="text" id="company" name="company" class="bg-gray-700 border border-gray-600 text-gray-200 text-sm rounded-lg focus:ring-sky-500 focus:border-sky-500 block w-full p-2.5" placeholder="Your Company Inc.">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-300">Message</label>
+                        <textarea id="message" name="message" rows="4" class="bg-gray-700 border border-gray-600 text-gray-200 text-sm rounded-lg focus:ring-sky-500 focus:border-sky-500 block w-full p-2.5" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn w-full bg-accent-color text-white font-semibold py-3 px-6 rounded-lg text-lg shadow-md">
+                        Send Message
+                    </button>
+                    <p id="formFeedback" class="text-center mt-4 text-sm"></p>
+                </form>
+
+                <div class="mt-10 text-center text-gray-400">
+                    <p class="mb-2">Or reach us directly:</p>
+                    <p class="mb-1"><i class="fas fa-envelope mr-2 accent-color"></i> <a href="mailto:contact@anglerbi.com" class="hover:text-sky-400">contact@anglerbi.com</a></p>
+                    <p class="mb-1"><i class="fas fa-phone mr-2 accent-color"></i> <a href="tel:+15551234567" class="hover:text-sky-400">(555) 123-4567 (Optional)</a></p>
+                    <p><i class="fab fa-linkedin mr-2 accent-color"></i> <a href="#" class="hover:text-sky-400">LinkedIn Profile (Optional)</a></p>
+                </div>
+            </div>
+
+            <div class="mt-16 pt-8 border-t border-gray-700 text-center text-gray-500">
+                 <img src="assets/Angler_Test.png" alt="Angler BI Small Logo" class="h-8 mx-auto mb-4" onerror="this.onerror=null; this.src='https://placehold.co/100x30/0A101F/FFFFFF?text=AnglerBI&font=Inter';">
+                <p class="text-sm">&copy; <span id="currentYear"></span> Angler Business Intelligence, LLC. All Rights Reserved.</p>
+                <p class="text-xs mt-1">
+                    <a href="#" class="hover:text-sky-400">Privacy Policy</a> | <a href="#" class="hover:text-sky-400">Terms of Service</a> (Placeholders)
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
